@@ -1,2 +1,4 @@
 # kabbalah_name_to_sacred_numbers
-convert your name to his cabalistic numerological representation.  
+# convert your name to his cabalistic numerological representation.  
+
+"Kabbalah_Name_to_Sacred_Numbers" es una fascinante aplicación en Python que te permite convertir tu nombre a su representación numerológica cabalística. Basada en los principios de la Kabbalah, esta herramienta utiliza antiguas enseñanzas para revelar los números sagrados asociados a cada letra de tu nombre. Estos números poseen significados profundos y simbólicos, ofreciendo una visión única de tu personalidad, destino y potencial espiritual. Con solo ingresar tu nombre, "Kabbalah_Name_to_Sacred_Numbers" generará una interpretación numerológica cabalística personalizada, brindándote una comprensión más profunda de ti mismo y ayudándote en tu viaje de autoexploración y crecimiento espiritual. ¡Descubre la magia oculta detrás de tu nombre con esta poderosa aplicación en Python!
