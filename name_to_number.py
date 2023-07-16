@@ -45,6 +45,27 @@ def generar_explicacion(numero_cabalistico):
     return explicaciones_individuales
 
 
+def obtener_equivalencia_hebrea(nombre):
+    equivalencia_hebrea = {
+        'A': 'א', 'B': 'ב', 'C': 'כ', 'D': 'ד', 'E': 'ה', 'F': 'ו', 'G': 'ג', 'H': 'ה', 'I': 'י',
+        'J': 'י', 'K': 'כ', 'L': 'ל', 'M': 'מ', 'N': 'נ', 'O': 'ע', 'P': 'פ', 'Q': 'ק',
+        'R': 'ר', 'S': 'ש', 'T': 'ת', 'U': 'ו', 'V': 'ו', 'W': 'ו', 'X': 'צ',
+        'Y': 'י', 'Z': 'ז'
+    }
+
+    nombre = nombre.upper()
+    equivalencia = []
+
+    for letra in nombre:
+        if letra in equivalencia_hebrea:
+            equivalencia.append(equivalencia_hebrea[letra])
+        else:
+            equivalencia.append(letra)
+
+    equivalencia_hebrea = ''.join(equivalencia)
+    return equivalencia_hebrea
+
+
 print("\n--- Bienvenido al programa de Números Cabalísticos ---\n")
 
 nombre = input("Ingresa un nombre: ")
@@ -55,8 +76,8 @@ explicaciones = generar_explicacion(numero_cabalistico)
 
 print(f"El número cabalístico del nombre '{nombre}' es: {numero_cabalistico}\n")
 
-equivalencia_yiddish = f"La equivalencia lingüística en yiddish del nombre '{nombre}' es: {nombre.lower()}"
-print(equivalencia_yiddish)
+equivalencia_hebrea = obtener_equivalencia_hebrea(nombre)
+print(f"La equivalencia lingüística en hebreo del nombre '{nombre}' es: {equivalencia_hebrea}")
 print()
 
 if explicaciones:
@@ -66,3 +87,4 @@ if explicaciones:
     print()
 else:
     print("No se encontró una explicación para ese número.")
+
